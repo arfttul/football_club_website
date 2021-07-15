@@ -42,10 +42,14 @@ a{
 .btn{
     background-color: var(--btn-color);
     
+
+    
 }
 .fas{
    
     font-size: 1.8rem;
+    color: var(--text-color-lite);
+
 }
 /*---------------
                  header and navigation 
@@ -87,6 +91,63 @@ nav a{
     text-align: center;
 }
 
+/* ------------
+                        section-main
+--------------- */
+
+.section-main{
+    background-color: var(--main-section-bg-color);
+    height: 80vh;
+    width: 100%;
+    padding: 20px;
+    
+}
+.heading-1{
+    font-size: 64px;
+    color: var(--text-color-lite);
+}
+.btn-live{
+    width: 168px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-lite);
+    text-transform: capitalize;
+}
+
+.section-main-features{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.section-main-feature-img img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media query  */
 
 @media only screen and (max-width: 993px) {
@@ -105,7 +166,7 @@ nav a{
         display: flex;
         justify-content: space-between;
         width: 97%;
-        
+
     }
     .resp-nav-items{
         display: none;
@@ -127,7 +188,27 @@ nav a{
         color: var(--text-color-lite);
         
     }
+        /* --------------
+                            section-main
+        ----------------- */
+        .section-main{
+            height: 95vh;
+        }
+        .section-main-features{
+            display: flex;
+            flex-direction: column;
+            
+        }
         
+        .heading-1{
+            font-size: 4.8rem;
+            margin-bottom: 2.6rem;
+        }
+        .btn-live{
+            margin-bottom: 20px;
+            margin-bottom: 4.8rem;
+        }
+
     
   }
 
