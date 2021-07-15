@@ -31,6 +31,12 @@ body{
 a{
     text-decoration: none;
 }
+img{
+    width: 100%;
+}
+h1,h2,h3{
+    text-transform: capitalize;
+}
 .container{
     width: 80%;
     max-width: 1200px;
@@ -40,15 +46,17 @@ a{
     display: flex;
 }
 .btn{
-    background-color: var(--btn-color);
-    
+    background-color: var(--btn-color);    
+}
 
-    
+.btn a{
+    color: var(--text-color-lite);
 }
 .fas{
    
     font-size: 1.8rem;
     color: var(--text-color-lite);
+    margin: 0;
 
 }
 /*---------------
@@ -105,6 +113,7 @@ nav a{
 .heading-1{
     font-size: 64px;
     color: var(--text-color-lite);
+    text-transform: capitalize;
 }
 .btn-live{
     width: 168px;
@@ -120,18 +129,56 @@ nav a{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
+    
 }
 .section-main-feature-img img {
     max-width: 100%;
 }
 
 
+/* --------------
+                            section-players
+        ----------------- */
+
+    .section-players{
+        padding-top: 20px;
+        margin-top: 70px;
+        border: 2px solid;
+    }
+    .player-info{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px 15px;
+    }
+    .player{
+        padding: 5px 13px;
+        margin-bottom: 2.7rem;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .player img{
+        width: 95%;
+        align-self: center;
+        margin-bottom: 1rem;
+        
+    }
 
 
 
+/* --------------
+                            section-highlights
+        ----------------- */
 
-
-
+    .section-highlights{
+        margin-top: 20px;
+        padding-top: 50px;
+    }
+    .highlights-text{
+        
+    }
 
 
 
@@ -151,6 +198,9 @@ nav a{
 /* media query  */
 
 @media only screen and (max-width: 993px) {
+    header{
+        margin-bottom: 0;
+    }
     .nav-desktop{
         display: none;
     }
@@ -173,6 +223,7 @@ nav a{
     }
     .checkbox:checked ~ nav{
         display: block;
+       
     }
     .resp-nav-items-wrapper{
         display: flex;
@@ -192,7 +243,8 @@ nav a{
                             section-main
         ----------------- */
         .section-main{
-            height: 95vh;
+            height: 145vh;
+            margin-top: 0;
         }
         .section-main-features{
             display: flex;
